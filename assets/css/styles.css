@@ -17,18 +17,19 @@
   Consider using vh?
 */
 .s-left-half {
+  width:100%;
   left: 0;
   background: #232326;
   /* box-shadow: inset -4px 0px 4px -3px #1a1a1ab3; */
   color: white;
   padding-left: 0px;
-  padding-right: 10px;
 }
 
 .s-right-half {
   right: 0;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00233B', endColorstr='#090915',GradientType=0 );
-  background: linear-gradient(#00233B 0%, #090915 100%);
+  /*background: linear-gradient(#00233B 0%, #090915 100%);*/
+  background: rgba(22,22,27,0.85);
   border-left: 0px solid #16161b;
   padding: 0;
 }
@@ -42,7 +43,6 @@
 }
 
 .s-login-box {
-  background: #16161b;
   position: relative;
   z-index: 15;
   padding: 0;
@@ -53,7 +53,7 @@
 }
 
 .s-login-box-form {
-  padding: 0 35px 8px 25px;
+  padding: 0 25px 8px 25px;
   overflow: hidden;
 }
 
@@ -233,3 +233,61 @@ div#space{
   padding:3px;
 }
 
+.login-tab{
+  width:100%;
+  height:20px;
+  line-height: 20px;
+  text-align:center;
+  font-size:15px;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.login-tab-left{
+  width:50%;
+  float: left;
+  color: #1868C2;
+}
+.login-tab-right{
+  width:50%;
+  float:right;
+}
+.input-control{
+}
+
+.login-server-status-box{
+  background-color:rgba(0,0,0,0.5);
+  width: 15% ;
+  height: 120px;
+  position: absolute;
+  padding:10px ;
+}
+.login-server-status-box>p{
+  font-size: 14px;
+  padding-left: 0px;
+  margin-bottom: 15px;
+}
+.login-server-status-box>span{
+  display: block;
+  margin-top: 10px;
+}
+
+#login-server-status-lobby{
+  color: #f44336;
+}
+#login-server-status-rest{
+  color: #4caf50;
+}
+#login-server-status-zone{
+  color: #4caf50;
+}
+
+.login-notice-box{
+  background-color:rgba(0,0,0,0.5);
+  width: 55% ;
+  height: 120px;
+  position: absolute;
+  padding:10px ;
+  right:0;
+}

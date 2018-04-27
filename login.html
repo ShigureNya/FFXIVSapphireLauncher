@@ -49,16 +49,25 @@
 </head>
 
 <body scroll="no">
-	<div class="s-full-split s-left-half col-xs-8">
+	<div class="s-full-split s-left-half">
+		<div class="login-server-status-box">
+			<p>服务器状态</p>
+			<span>大厅服务器状态&nbsp;:&nbsp;<a id="login-server-status-lobby">延迟</a></span>
+			<span>网页服务器状态&nbsp;:&nbsp;<a id="login-server-status-rest">正常</a></span>
+			<span>地图服务器状态&nbsp;:&nbsp;<a id="login-server-status-zone">正常</a></span>
+		</div>
 		<img src="assets/img/login_launcher.jpg" class="login-launcher-img" />
 	</div>
-	<div class="s-full-split s-right-half col-xs-4">
+	<div class="s-full-split s-right-half col-xs-3">
 		<div class="s-logo">
 			<img src="assets/img/login_head.jpg">
 		</div>
 		<div class="s-login-box col-xs-12">
 			<div class="s-login-box-form">
-				<h1 class="text-center s-login-call">登录帐号</h1>
+				<div class="login-tab">
+					<div class="login-tab-left" id="login-tab-user">帐号登录</div>
+					<div class="login-tab-right" id="login-tab-qrcode" disabled="disabled">扫码登录</div>
+				</div>
 				<div class="input-control">
 					<label class="s-login-input-wrapper">
 						用户名
@@ -86,7 +95,7 @@
 	
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
+	<script src="assets/js/login.js"></script>
 	<script>
 		fetch( "https://api.github.com/repos/SapphireMordred/Sapphire/events" ).then( function( resp ) {
 			return resp.json();
@@ -100,7 +109,6 @@
 				for ( var commit of evnt.payload.commits ) {
 					let e = document.createElement( 'li' );
 					e.innerHTML = '<a href="https://github.com/SapphireMordred/Sapphire/commit/' + commit.sha + '">' + commit.message + '</a>';
-
 					commitContainer.appendChild( e );
 				}
 			}
