@@ -49,43 +49,33 @@
 </head>
 
 <body scroll="no">
-	<div class="s-full-split s-left-half col-xs-7">
-		<div class="clearfix s-link-badge-wrapper">
-			<a href="https://discord.gg/KfrZCkx" class="s-link-badge s-link-badge-discord col-xs-5">
-				Join us on Discord!
-			</a>
-			<a href="https://github.com/SapphireMordred/Sapphire" class="s-link-badge s-link-badge-github col-xs-5 pull-left">
-				Our Github repository
-			</a>
-		</div>
-		<h2>Recent Activity</h2>
-		<ul id="commit-log" class="commit-history">
-
-		</ul>
+	<div class="s-full-split s-left-half col-xs-8">
+		<img src="assets/img/login_launcher.jpg" class="login-launcher-img" />
 	</div>
-	<div class="s-full-split s-right-half col-xs-5">
+	<div class="s-full-split s-right-half col-xs-4">
 		<div class="s-logo">
-			<img src="assets/img/sapphire_logo_resize.png">
+			<img src="assets/img/login_head.jpg">
 		</div>
 		<div class="s-login-box col-xs-12">
 			<div class="s-login-box-form">
-				<h1 class="text-center s-login-call">Login to Account</h1>
+				<h1 class="text-center s-login-call">登录帐号</h1>
 				<div class="input-control">
 					<label class="s-login-input-wrapper">
-						Username
+						用户名
 						<input type="text" name="username" autofocus>
 					</label>
 				</div>
 				<div class="input-control">
 					<label class="s-login-input-wrapper">
-						Password
+						密码
 						<input type="password" name="password">
 					</label>
 				</div>
-				<button class="btn btn-default s-login-btn pull-right" id="submitButton" onclick="doLogin()">Login</button>
+				<button class="btn btn-default s-login-btn pull-right" id="submitButton" onclick="doLogin()">登录</button>
 				<p id="Error" class="s-error-text"></p>
+
+				<a class="btn btn-default s-acc-btn" href="createUser.html">新建帐号</a>
 			</div>
-			<a class="btn btn-default s-acc-btn" href="createUser.html">Create Account</a>
 		</div>
 		<div class="s-gears">
 			<img class="s-gears" src="assets/img/graffletopia-gears.png" alt="">
