@@ -258,7 +258,6 @@ div#space{
 
 .login-server-status-box{
   background-color:rgba(0,0,0,0.5);
-  width: 20% ;
   height: 120px;
   position: absolute;
   padding:10px ;
@@ -285,9 +284,14 @@ div#space{
 
 .login-notice-box{
   background-color:rgba(0,0,0,0.5);
-  width: 55% ;
-  height: 120px;
+  height: 170px;
   position: absolute;
   padding:10px ;
-  right:0;
+  left:0;
+  bottom: 0;
+}
+.login-notice-box>p{
+  font-size: 14px;
+  padding-left: 0px;
+  margin-bottom: 15px;
 }

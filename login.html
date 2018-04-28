@@ -50,11 +50,34 @@
 
 <body scroll="no" style="font-family:'微软雅黑'">
 	<div class="s-full-split s-left-half">
-		<div class="login-server-status-box">
+		<div class="login-server-status-box col-xs-2">
 			<p>服务器状态</p>
 			<span>大厅服务器状态&nbsp;:&nbsp;<a id="login-server-status-lobby">延迟</a></span>
 			<span>网页服务器状态&nbsp;:&nbsp;<a id="login-server-status-rest">正常</a></span>
 			<span>地图服务器状态&nbsp;:&nbsp;<a id="login-server-status-zone">正常</a></span>
+		</div>
+		<div class="login-notice-box col-xs-3">
+			<p>服务器信息</p>
+			<ul style="padding-left: 20px ; line-height: 20px">
+				<li>
+					Current Patch Version&nbsp;:&nbsp;<a id="login-notice-version">4.25</a>
+				</li>
+				<li>
+					Current Patch Name&nbsp;:&nbsp;<a id="login-notice-name">暁光の刻</a>
+				</li>
+				<li>
+					鉴权SDK&nbsp;:&nbsp;
+					<a id="login-notice-secret"><br/>
+						cc1726184891910d335b77234800ea262a2190a6
+					</a>
+				</li>
+				<li>
+					物理网卡地址&nbsp;:&nbsp;
+					<a id="login-notice-net"><br/>
+						0C-DA-41-1D-31-5F
+					</a>
+				</li>
+			</ul>
 		</div>
 		<img src="assets/img/login_launcher.jpg" class="login-launcher-img" />
 	</div>
