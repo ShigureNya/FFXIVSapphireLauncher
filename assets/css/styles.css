@@ -53,7 +53,7 @@
 }
 
 .s-login-box-form {
-  padding: 0 25px 8px 25px;
+  padding: 0 15px 8px 15px;
   overflow: hidden;
 }
 
@@ -63,7 +63,7 @@
   width: 100%;
   margin-bottom: 15px;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12.5px;
   color: #fff;
 }
 
@@ -105,7 +105,7 @@
 .s-login-btn {
   width: 100%;
   background: #0e6bc9;
-  margin-top: 30px;
+  margin-top: 10px;
   right: 0px;    /* ugh. refer to padding-left on input above - more bounding box issues... */
 }
 
@@ -158,7 +158,7 @@ h2.text-center{
 .s-login-call{
   color: #fff;
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .s-link-badge-wrapper {
@@ -240,7 +240,7 @@ div#space{
   text-align:center;
   font-size:15px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-top: 20px;
   cursor: pointer;
 }
@@ -258,7 +258,7 @@ div#space{
 
 .login-server-status-box{
   background-color:rgba(0,0,0,0.5);
-  width: 15% ;
+  width: 20% ;
   height: 120px;
   position: absolute;
   padding:10px ;
