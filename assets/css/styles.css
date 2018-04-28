@@ -272,13 +272,10 @@ div#space{
   margin-top: 10px;
 }
 
-#login-server-status-lobby{
+.login-server-status-error{
   color: #f44336;
 }
-#login-server-status-rest{
-  color: #4caf50;
-}
-#login-server-status-zone{
+.login-server-status-success{
   color: #4caf50;
 }
 
